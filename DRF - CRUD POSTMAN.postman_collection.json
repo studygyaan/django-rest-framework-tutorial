@@ -1,0 +1,176 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DRF - CRUD POSTMAN",
+		"_postman_id": "78502376-b319-ebfb-b86c-8264e269690e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Logout",
+			"request": {
+				"url": "http://localhost:8000/api/logout/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token dcd76a7635d215607e8cf041092998f12b6d8baa61e4d86b67a985fd85507358",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"url": "http://localhost:8000/api/password_reset/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@bot.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password Confirm",
+			"request": {
+				"url": "http://localhost:8000/api/password_reset/confirm/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "9d80554d9f9f68c8c7befa14ad6bb9a97beae4131621425bb3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password@123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"url": "http://localhost:8000/api/change-password/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 178321309bdbfea92cd70272bac5344409ec9d569966833122d4889777efbb5d",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "old_password",
+							"value": "Password@123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "Password@123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Logout All",
+			"request": {
+				"url": "http://localhost:8000/api/logout/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token dcd76a7635d215607e8cf041092998f12b6d8baa61e4d86b67a985fd85507358",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "http://localhost:8000/api/user/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9274b940000fbd30702e1a17bda7b6b0b6015b278c57522f5d10436b98a21e04",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://localhost:8000/api/login/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password@123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
